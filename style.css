@@ -1,3 +1,25 @@
-body {
+#name
+{
+    font-family: "Courier New", sans-serif;
+    color: #ADD8E6;
+    margin-left: 450px;
+}
 
+#welcome
+{
+    font-family: "Courier New", sans-serif;
+    color: #ADD8E6;
+    margin-left: 200px;
+}
+
+img
+{
+  width: 550px;
+  height: 380px;
+  margin-left: 250px;
+}
+
+body
+{
+  background-color: #CD5C5C;
 }
