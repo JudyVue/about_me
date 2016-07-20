@@ -1,5 +1,5 @@
 
-
+//this function taken from http://stackoverflow.com/questions/17778921/javascript-onclick-prompt-boxes
 document.getElementById('button').onclick = function()
 {
 //instructions and original story for the user
