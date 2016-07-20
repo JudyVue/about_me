@@ -1,12 +1,13 @@
 
+
+document.getElementById('button').onclick = function()
+{
 //instructions and original story for the user
 alert('Take a minute to read my story, then answer the questions accordingly. I graduated from the University of Washington in 2009 with a degree in journalism. I used to work for KUOW and KIRO radio stations and have taught English in South Korea. I worked as a paralegal for the last two years, but realized I hated it and desparately want a career change. I do standup comedy and improv as my hobbies because I like making people laugh.');
 
 // global variable for if user answers yes or no
 var right = "Great job. You got it right!";
 var wrong = "Sorry, incorrect!";
-
-
 
 //the first prompt
 var firstPrompt = prompt ("Did Judy graduate with a degree in English? Type Yes or No.").toUpperCase();
@@ -29,15 +30,12 @@ var firstPrompt = prompt ("Did Judy graduate with a degree in English? Type Yes 
     {
       alert('WTF, dude! I said type yes or no!');
     }
+
 };
-
-
-
-
-/*
 //second prompt
 var secondPrompt = prompt ("Did Judy graduate in 2007? Type Yes or No.").toUpperCase();
 {
+
   //printing to the console
   console.log('The user answered ' + secondPrompt + ' to this question.')
 
@@ -46,9 +44,13 @@ var secondPrompt = prompt ("Did Judy graduate in 2007? Type Yes or No.").toUpper
     {
        alert("You answered " + secondPrompt + ". "+ wrong );
     }
-    else
+    else if (secondPrompt === "NO")
     {
        alert("You answered " + secondPrompt + ". "+right);
+    }
+    else
+    {
+      alert('WTF, dude! I said type yes or no!');
     }
 };
 
@@ -64,9 +66,13 @@ var thirdPrompt = prompt ("Did Judy teach English in North Korea? Type Yes or No
     {
        alert("You answered " + thirdPrompt + ". "+ wrong );
     }
-    else
+    else if (thirdPrompt === "NO")
     {
        alert("You answered " + thirdPrompt + ". "+right);
+    }
+    else
+    {
+      alert('WTF, dude! I said type yes or no!');
     }
 };
 
@@ -82,9 +88,13 @@ var fourthPrompt = prompt ("Was Judy formerly a paralegal? Type Yes or No.").toU
     {
        alert("You answered " + fourthPrompt + ". "+wrong);
     }
-    else
+    else if (fourthPrompt == "YES")
     {
        alert("You answered " + fourthPrompt + ". "+ right );
+    }
+    else
+    {
+      alert('WTF, dude! I said type yes or no!');
     }
 };
 
@@ -99,9 +109,14 @@ var fifthPrompt = prompt ("Does Judy perform improv as a hobby? Type Yes or No."
   {
      alert("You answered " + fifthPrompt + ". "+wrong);
   }
-  else
+  else if(fifthPrompt === "YES")
   {
      alert("You answered " + fifthPrompt + ". "+ right );
   }
+  else
+  {
+    alert('WTF, dude! I said type yes or no!');
+  }
 };
-*/
+
+};
