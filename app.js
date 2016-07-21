@@ -11,8 +11,7 @@ var wrong = "Sorry, incorrect!";
 var score = 0;
 
 //the first prompt
-var firstPrompt = prompt ('Did Judy graduate with a degree in English? Type Yes or No.').toUpperCase()
-{
+var firstPrompt = prompt ('Did Judy graduate with a degree in English? Type Yes or No.').toUpperCase();
 
 //printing to the console
   console.log('The user answered ' + firstPrompt + ' to this question.');
@@ -31,7 +30,7 @@ var firstPrompt = prompt ('Did Judy graduate with a degree in English? Type Yes 
     else {
       alert('WTF, dude! I said type yes or no!');
     }
-};
+
 
 //second prompt
 var secondPrompt = prompt ("Did Judy graduate in 2007? Type Yes or No.").toUpperCase()
