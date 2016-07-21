@@ -1,3 +1,5 @@
+//PLEASE USE FIREFOX, SOME KIND OF CROSS-BROWSER BUG IN CHROME I COULDN'T FIGURE OUT.
+
 
 //this function taken from http://stackoverflow.com/questions/17778921/javascript-onclick-prompt-boxes
 document.getElementById('button').onclick = function()
