@@ -1,2 +1,5 @@
 # about_me
-This is my About Me project for Code 201. 
+Driver: Michael Molinari
+Navigator: Judy Vue
+
+We worked on this code together.
