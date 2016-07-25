@@ -2,12 +2,7 @@
 
 
 //this function taken from http://stackoverflow.com/questions/17778921/javascript-onclick-prompt-boxes
-// document.getElementById('button').onclick = function()
-// {
-//instructions and original story for the user
-function story() {
-  alert('Take a minute to read my story, then answer the questions accordingly. I graduated from the University of Washington in 2009 with a degree in journalism. I used to work for KUOW and KIRO radio stations and have taught English in South Korea. I worked as a paralegal for the last two years, but realized I hated it and desparately want a career change. I do standup comedy and improv as my hobbies because I like making people laugh.');
-};
+document.getElementById('button').onclick = function(){
 
 // global variable for if user answers yes or no
 var right = "Great job. You got it right!";
@@ -21,8 +16,6 @@ function firstQuestion() {
     console.log('The user answered ' + firstPrompt + ' to this question.');
 
   //if statements prompting user to type yes or no
-
-
       if (firstPrompt === "YES" || firstPrompt === "Y") {
          alert("You answered " + firstPrompt + ". "+ wrong );
 
@@ -34,14 +27,13 @@ function firstQuestion() {
       else {
         alert('WTF, dude! I said type yes or no!');
       }
-};
+}
 
 //second prompt
 function secondQuestion() {
-  var secondPrompt = prompt("Did Judy graduate in 2007? Type Yes or No.").toUpperCase()
+  var secondPrompt = prompt("Did Judy graduate in 2007? Type Yes or No.").toUpperCase();
   //printing to the console
-  console.log('The user answered ' + secondPrompt + ' to this question.')
-
+  console.log('The user answered ' + secondPrompt + ' to this question.');
 //if statements prompting user to type yes or no
   if (secondPrompt === "YES" || secondPrompt === "Y") {
        alert("You answered " + secondPrompt + ". "+ wrong );
@@ -54,13 +46,13 @@ function secondQuestion() {
     else {
       alert('WTF, dude! I said type yes or no!');
     }
-};
+}
 
 //third prompt
 function thirdQuestion() {
-  var thirdPrompt = prompt("Did Judy teach English in North Korea? Type Yes or No.").toUpperCase()
+  var thirdPrompt = prompt("Did Judy teach English in North Korea? Type Yes or No.").toUpperCase();
   //printing to the console
-  console.log('The user answered ' + thirdPrompt + ' to this question.')
+  console.log('The user answered ' + thirdPrompt + ' to this question.');
 
 //if statements prompting user to type yes or no
   if (thirdPrompt === "YES" || thirdPrompt === "Y") {
@@ -74,13 +66,13 @@ function thirdQuestion() {
     else {
       alert('WTF, dude! I said type yes or no!');
     }
-};
+}
 
 //fourth prompt
 function fourthQuestion() {
   var fourthPrompt = prompt("Was Judy formerly a paralegal? Type Yes or No.").toUpperCase();
   //printing to the console
-  console.log('The user answered ' + fourthPrompt + ' to this question.')
+  console.log('The user answered ' + fourthPrompt + ' to this question.');
 
 //if statements prompting user to type yes or no
   if (fourthPrompt === "NO" || fourthPrompt === "N"){
@@ -91,14 +83,13 @@ function fourthQuestion() {
     } else  {
       alert('WTF, dude! I said type yes or no!');
     }
-};
+}
 
 //fifth prompt
 function fifthQuestion() {
-  var fifthPrompt = prompt("Does Judy perform improv as a hobby? Type Yes or No.").toUpperCase()
+  var fifthPrompt = prompt("Does Judy perform improv as a hobby? Type Yes or No.").toUpperCase();
   //printing to the console
-  console.log('The user answered ' + fifthPrompt + ' to this question.')
-
+  console.log('The user answered ' + fifthPrompt + ' to this question.');
 //if statements prompting user to type yes or no
   if (fifthPrompt === "NO" || fifthPrompt == "N"){
      alert("You answered " + fifthPrompt + ". "+wrong);
@@ -108,7 +99,7 @@ function fifthQuestion() {
   } else {
     alert('WTF, dude! I said type yes or no!');
   }
-};
+}
 
 //sixth prompt
 
@@ -137,26 +128,18 @@ function fifthQuestion() {
     break;
   }
 }
-};
+}
 
 //seventh prompt
 function seventhQuestion() {
-
-var countries;
-countries = ['South Korea', 'China', 'Japan', 'Mongolia', 'Thailand', 'Laos'];
-
-//for loops
+var countries = ['South Korea', 'China', 'Japan', 'Mongolia', 'Thailand', 'Laos'];
 var numberOfGuesses = 0;
 
-
 while (numberOfGuesses < 6){
-  //declare the variables and prompt
   var seventhPrompt = prompt('BONUS QUESTION: Judy has visited several countries in Asia. You have 6 chances to guess one Asian country she has been to. Go!').toUpperCase();
-
   //boolean
   var finish = false;
-
-  for (var k = 0; k < countries.length; k++) {
+for (var k = 0; k < countries.length; k++) {
   if (seventhPrompt === countries[k].toUpperCase()) {
       alert ('Congrats! Judy has visited ' + countries[k] + '! In total, Judy has visited ' + countries + '.');
       numberOfGuesses = 7;
@@ -165,17 +148,19 @@ while (numberOfGuesses < 6){
       break;
   }
 }
-  if (finish === false) {
+if (finish === false) {
     alert ('Nope! Keep guessing!');
     numberOfGuesses += 1;
+  }
+  while (numberOfGuesses === 6) {
+    if(seventhPrompt !== countries[k]) {
+    alert ('Sorry, your six chances are up. Judy has visited ' + countries +'.');
+  }
 }
-//   if ((numberOfGuesses === 6) && (seventhPrompt !== countries[k].toUpperCase())) {
-//     alert ('Sorry, your six chances are up. Judy has visited ' + countries +'.');
-// }
 }
-};
 
-story();
+}
+
 firstQuestion();
 secondQuestion();
 thirdQuestion();
@@ -183,7 +168,7 @@ fourthQuestion();
 fifthQuestion();
 sixthQuestion();
 seventhQuestion();
-scoreKeeping();
+
 
 // //scorekeeping
 function scoreKeeping() {
@@ -193,6 +178,7 @@ function scoreKeeping() {
   else {
     alert ('Your score was ' + score + ' out of 7. We\'re not going on a second date!');
   }
-};
+}
+scoreKeeping();
 //
-// };
+};
