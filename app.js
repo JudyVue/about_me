@@ -152,13 +152,13 @@ if (finish === false) {
     alert ('Nope! Keep guessing!');
     numberOfGuesses += 1;
   }
-  while (numberOfGuesses === 6) {
-    if(seventhPrompt !== countries[k]) {
+for (var j = 0; j < countries.length; j++) {
+    if(numberOfGuesses === 6 && seventhPrompt !== countries[j]) {
     alert ('Sorry, your six chances are up. Judy has visited ' + countries +'.');
+    break;
   }
 }
 }
-
 }
 
 firstQuestion();
